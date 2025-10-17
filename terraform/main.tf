@@ -74,14 +74,6 @@ resource "azurerm_container_group" "webapp" {
       "NGINX_HOST" = "localhost"
       "NGINX_PORT" = "80"
     }
-
-    # Volume mount for logs (optional)
-    volume {
-      name       = "nginx-logs"
-      mount_path = "/var/log/nginx"
-      read_only  = false
-      empty_dir  = true
-    }
   }
 
   image_registry_credential {
@@ -97,13 +89,4 @@ resource "azurerm_container_group" "webapp" {
   }
 
   depends_on = [azurerm_container_registry.acr]
-}
-
-# Log Analytics Workspace (optional)
-resource "azurerm_log_analytics_workspace" "main" {
-  name                = "logs-${random_string.suffix.result}"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
-  sku                 = "PerGB2018"
-  retention_in_days   = 30
 }
