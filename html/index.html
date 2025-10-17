@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx Docker Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Nginx Docker Web Application</h1>
+            <p>Deployed on Azure with Terraform</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Container Information</h2>
+                <div id="container-info">
+                    <p><strong>Server:</strong> <span id="server-name">Nginx</span></p>
+                    <p><strong>Status:</strong> <span class="status running">Running</span></p>
+                    <p><strong>Platform:</strong> <span id="platform">Docker Container</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>System Stats</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Uptime</span>
+                        <span class="stat-value" id="uptime">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Requests</span>
+                        <span class="stat-value" id="requests">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Version</span>
+                        <span class="stat-value">1.0.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Features</h2>
+                <ul class="features">
+                    <li>✅ Nginx Web Server</li>
+                    <li>✅ Docker Containerized</li>
+                    <li>✅ Azure Cloud Deployment</li>
+                    <li>✅ Terraform Infrastructure</li>
+                    <li>✅ Responsive Design</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Deployed with ❤️ using Docker & Terraform</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
