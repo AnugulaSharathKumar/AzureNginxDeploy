@@ -1,1 +1,14 @@
 # AzureNginxDeploy
+nginx-webapp/
+├── docker/
+│   ├── Dockerfile
+│   └── nginx.conf
+├── html/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+└── deploy.sh
